@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style src="style.css"></style>
+    <style>
+        body #Login{
+            font-size: 25px;
+            padding: 25px 50px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 5px 5px 3px gray;
+            width: 100%;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Four Points Loss Prevention Management Page</h1>
+    <br> <br> <br>
+    <input type="button" value="Log-in" onclick="PW_function()" id="Login">
+    <script>
+        function PW_function(){
+            if(prompt('PassWord : ')==='Fplp123'){
+                alert('페이지로 이동합니다.')
+                window.open('index.html','_self');
+            }else{
+                alert('Wrong Password');
+            }
+        }
+    </script>
+</body>
+</html>
